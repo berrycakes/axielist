@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(36, 39, 53);
+  color: azure;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20%;
+}
+a {
+  color: azure;
+  text-decoration: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+img {
+  height: 115px;
+  width: auto;
+  object-fit: contain;
+}
+
+.axie {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  border-radius: 20px;
+  background: rgb(40, 43, 57);
+  border: darkgray 1px solid;
+  margin: auto;
+  padding: 1rem 0;
+}
+
+.owner {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* max-width: 180px; */
+}
+
+.listContainer {
+  width: 80vw;
+  margin-top: 4%;
+  padding: 0 10%;
+  border-radius: 3px;
+  display: inline-grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  row-gap: 2rem;
+}
+
+.available {
+  color: rgb(150, 210, 148);
+  font-weight: bold;
+}
+.unavailable {
+  color: rgb(255, 95, 95);
+  font-weight: bold;
+}
+
+.availableCard {
+  border: rgb(150, 210, 148) 2px solid;
+}
+
+.requested {
+  color: rgb(250, 224, 110);
+  font-weight: bold;
+}
+
+button {
+  position: absolute;
+  align-self: flex-end;
+  font-size: 1.5rem;
+  border: transparent;
+  background-color: transparent;
+  color: azure;
+  padding-right: 1rem;
+}
+
+p {
+  margin: 0 0 5px 0;
+}
+
+select {
+  margin-top: 0;
+  margin: 10px;
+  display: inline-block;
+  padding: 12px 30px;
+  border: 0;
+  text-decoration: none;
+  border-radius: 15px;
+  background-color: rgb(40, 43, 57);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(30px);
+  box-shadow: 0 2px 4px 0 rgba(78, 64, 64, 0.37);
+  color: inherit;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: rgb(82, 82, 82);
+    transition: all ease 0.8s;
+  }
+}
